@@ -23,7 +23,7 @@ where usuario.id=alumno.id_usuario
 
 Ver los cursos en los que un usuario está inscrito y en que fecha se inscribio.
 */
-SELECT curso.descripcion, pago.fecha_inicio
+SELECT curso.descripcion, pago.fecha
 FROM curso
 JOIN item_carrito ON item_carrito.id_curso = curso.id
 JOIN carrito ON item_carrito.id_carrito = carrito.id
